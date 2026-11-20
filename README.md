@@ -21,6 +21,15 @@ bash netbird-steamdeck.sh
 Das Skript legt bei Bedarf ein Passwort für `deck` an (sudo braucht eins), fragt nach dem
 sudo-Passwort und dem Setup-Key.
 
+Oder gleich mit dem Setup-Key (dann fragt es nur noch nach dem Passwort):
+
+```bash
+curl -fsSLO https://raw.githubusercontent.com/ithilgers/steamdeck-netbird/main/netbird-steamdeck.sh && bash netbird-steamdeck.sh install DEIN-SETUP-KEY
+```
+
+Der Key steht danach im Befehlsverlauf (`~/.bash_history`). Am besten einen Key nehmen, der nur
+einmal gilt oder bald abläuft.
+
 Im NetBird-Dashboard:
 
 1. Vorher einen Setup-Key anlegen. Am besten mit einer Auto-Gruppe, die in der SSH-Policy steht,

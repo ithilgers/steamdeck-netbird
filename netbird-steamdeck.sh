@@ -5,7 +5,8 @@
 #
 # Neues Deck (Desktop-Modus → Konsole):
 #   curl -fsSLO https://raw.githubusercontent.com/ithilgers/steamdeck-netbird/main/netbird-steamdeck.sh
-#   bash netbird-steamdeck.sh
+#   bash netbird-steamdeck.sh                      # fragt nach dem Setup-Key
+#   bash netbird-steamdeck.sh install SETUP-KEY    # Key gleich mitgeben
 # Das Skript legt bei Bedarf erst ein Passwort für "deck" an (sudo braucht eins),
 # fragt nach dem sudo-Passwort und dem Setup-Key – mehr ist nicht nötig.
 #
@@ -26,7 +27,7 @@
 set -euo pipefail
 
 # Wird von release.sh gesetzt (JJJJMMTTHHMM)
-SCRIPT_VERSION=202611202036
+SCRIPT_VERSION=202611202039
 SCRIPT_URL=https://raw.githubusercontent.com/ithilgers/steamdeck-netbird/main/netbird-steamdeck.sh
 SIGNER_KEY="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGAQXUYaMEMIUfoZLuf9xL2I/WPLyGjshnL05xIrsjmE steamdeck-netbird release"
 SIG_NAMESPACE=netbird-steamdeck
